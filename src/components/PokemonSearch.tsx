@@ -14,8 +14,9 @@ const PokemonSearch = () => {
 
   const searchPokemon = async () => {
     try {
+      const encodedName = encodeURIComponent(pokemonName);
       const response = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+        `https://pokeapi.co/api/v2/pokemon/${encodedName}`
       );
       setPokemonData(response.data);
     } catch (error) {

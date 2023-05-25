@@ -5,7 +5,7 @@ import PokemonSearch from "./components/PokemonSearch";
 const App: React.FC = () => {
   return (
     <div>
-      <h1>ゲーム検索</h1>
+      <h1>ポケモン検索</h1>
       <PokemonSearch />
     </div>
   );
